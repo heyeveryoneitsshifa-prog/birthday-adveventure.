@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to Your Birthday Adventure 🎉</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fff0f5;
+  padding-top: 100px;
+  color: #333;
+}
+h1 {
+  color: #d6336c;
+}
+input {
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #d6336c;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #c02668;
+}
+</style>
+</head>
+<body>
+
+<h1>Welcome to Your Birthday Adventure 🎉</h1>
+<p>This little world is just for you. Only the person who holds my heart can enter 💌</p>
+
+<p>Enter the password to continue 💙</p>
+<input type="password" id="passwordInput" placeholder="Type your password here">
+<button onclick="checkPassword()">Continue</button>
+
+<p style="margin-top: 20px; font-style: italic; color: #666;">Hint: Something only we know 💙</p>
+
+<script>
+function checkPassword() {
+  const input = document.getElementById('passwordInput').value;
+  if(input === "Ranveer_Singh!") {
+    window.location.href = "homepage.html"; // Redirect to your main homepage
+  } else {
+    alert("Wrong password 💔 Try again!");
+  }
+}
+</script>
+
+</body>
+</html>
